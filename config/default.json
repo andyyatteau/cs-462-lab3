@@ -1,0 +1,9 @@
+    {
+      "foursquare": {	
+        "secrets": {
+          "clientId": "4IYGWTJIO5MY4TLMJNYMNVNA3LCDP1CX54IDC023V24Q5LPG",
+          "clientSecret": "PMGMOYJKX43HTK3DOWK4FV45ODI5YQ2LD1SGFV1QAZC1XSHC",
+          "redirectUrl": "http://localhost:3000/redirect_uri"
+        }
+      }
+    }

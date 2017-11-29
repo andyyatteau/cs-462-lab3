@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    if isSelf === "true"
+        h1 Your Checkins
+        ul
+            each checkin in checkins
+                li
+                    b Venue: #{checkin.venue}
+                ul
+                    li Checkin ID: #{checkin.id}
+                    li Created At: #{checkin.datetime}
+    else
+        h1 Most Recent Checkin
+        b Venue: #{checkins[0].venue}
+    br
+    br
+    p #[a(href="/users") Return to all users]

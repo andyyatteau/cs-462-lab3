@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 All Users
+    div
+        each user in users
+            ul
+                li
+                    a(href='/users/' + user.id) #{user.id} - #{user.firstName} #{user.lastName}
+    br
+    br
+    p #[a(href="/") Return to homepage]
